@@ -3,6 +3,7 @@
 #include <profiles/serial_profile.h>
 #include "views.h"
 #include <notification/notification_messages.h>
+#include <dolphin/dolphin.h>
 #include "hid_icons.h"
 
 #define TAG "HidApp"
@@ -139,6 +140,8 @@ int32_t bt_hid_kodi(void* p) {
 
     furi_hal_bt_start_advertising();
     bt_set_status_changed_callback(app->bt, bt_hid_connection_status_changed_callback, app);
+
+    dolphin_deed(DolphinDeedPluginStart);
 
     scene_manager_next_scene(app->scene_manager, HidSceneMain);
 
