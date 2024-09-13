@@ -13,6 +13,6 @@ App(
     fap_icon_assets_symbol="hid",
     fap_author="coded-with-claws",
     fap_weburl="https://github.com/coded-with-claws/flipperzero-tools/tree/main/applications_user/bt_hid_kodi",
-    fap_version=(1, 1),
+    fap_version=(1, 2),
     fap_description="Application Bluetooth remote Keynote for Kodi (original app + feature: long press on OK to switch between Space and Return (useful for Kodi to navigate the menus))",
 )
