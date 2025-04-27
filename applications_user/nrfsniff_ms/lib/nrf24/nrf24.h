@@ -40,7 +40,8 @@ extern "C" {
 
 #define nrf24_TIMEOUT 500
 #define nrf24_CE_PIN &gpio_ext_pb2
-#define nrf24_HANDLE &furi_hal_spi_bus_handle_external
+//#define nrf24_HANDLE &furi_hal_spi_bus_handle_external
+#define nrf24_HANDLE (FuriHalSpiBusHandle*) &furi_hal_spi_bus_handle_external
 
 /* Low level API */
 
